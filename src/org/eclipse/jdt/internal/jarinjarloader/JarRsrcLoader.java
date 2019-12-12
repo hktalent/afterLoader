@@ -67,7 +67,6 @@ public class JarRsrcLoader {
 			}
 		}
 
-		System.err.println("Missing attributes for JarRsrcLoader in Manifest (Rsrc-Main-Class, Rsrc-Class-Path)");
 		return null;
 	}
 
