@@ -1,2 +1,5 @@
 # afterLoader
 afterLoader
+
+### run
+-XstartOnFirstThread
