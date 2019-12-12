@@ -361,7 +361,8 @@ public class Utils {
         } else {
             conn = (HttpURLConnection)url.openConnection();
         }
-
+//        User-Agent=Mozilla/5.0 
+        conn.setRequestProperty("User-Agent", "Mozilla/5.0 (X18; U; Linux x86_128; zh-cn) AppleWebKit/531.2+ (KHTML, like Gecko) Epiphany/2.28.2 SUSE/2.28.0-2.4");
         conn.setRequestProperty("Content-Type", "application/octet-stream");
         conn.setRequestMethod("POST");
         if (header != null) {

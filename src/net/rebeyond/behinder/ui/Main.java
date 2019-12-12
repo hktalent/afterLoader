@@ -30,7 +30,7 @@ import java.util.Map;
 // Main.afterLoader
 // Main.crter
 public class Main {
-    public static String afterLoader = "afterLoader_M.T.X_51pwn.com";
+    public static String afterLoader = "afterLoader ";
     public static String crter = "M.T.X_51pwn.com";
     protected Shell shlGemini;
     private Table table;
@@ -149,7 +149,7 @@ public class Main {
             }
         });
         this.shlGemini.setSize(936, 565);
-        this.shlGemini.setText(String.format(Main.afterLoader + " %s 动态二进制加密Web远程管理客户端", new Object[]{Constants.VERSION}));
+        this.shlGemini.setText(String.format(Main.afterLoader + " %s 51Pwn客户端", new Object[]{Constants.VERSION}));
         this.shlGemini.setLayout(new GridLayout(1, false));
 
         ToolBar toolBar = new ToolBar(this.shlGemini, 8519680);
