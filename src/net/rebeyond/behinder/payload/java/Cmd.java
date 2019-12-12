@@ -54,6 +54,12 @@ public class Cmd {
         return true;
     }
 
+    /**
+     * 有待优化
+     * @param cmd
+     * @return
+     * @throws Exception
+     */
     private String RunCMD(String cmd) throws Exception {
         Charset osCharset = Charset.forName(System.getProperty("sun.jnu.encoding"));
         String result = "";
@@ -62,11 +68,10 @@ public class Cmd {
             if (System.getProperty("os.name").toLowerCase().indexOf("windows") >= 0) {
                 p = Runtime.getRuntime().exec(new String[]{"cmd.exe", "/c", cmd});
             } else {
-                p = Runtime.getRuntime().exec(cmd);
+                p = Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", cmd});
             }
 
             BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream(), "GB2312"));
-
             for(String disr = br.readLine(); disr != null; disr = br.readLine()) {
                 result = result + disr + "\n";
             }

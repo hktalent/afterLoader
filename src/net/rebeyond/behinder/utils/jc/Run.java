@@ -16,9 +16,7 @@ public class Run {
     }
 
     public void test() {
-        String sourceCode = "\r\nimport javax.servlet.jsp.PageContext;\r\nimport javax.servlet.ServletOutputStream;\r\npublic class test\r\n{\r\n\tpublic boolean equals(Object obj){\r\n\r\n\tPageContext page = (PageContext) obj;\r\n\t\t\ttry {\r\n\t\t\t\tServletOutputStream so=page.getResponse().getOutputStream();\r\n\t\t\t\tso.write(\"afsddf\".getBytes(\"UTF-8\"));\r\n\t\t\t\tso.flush();\r\n\t\t\t\tso.close();\r\n\t\t\t\tpage.getOut().clear();  \r\n\t\t\t} catch (Exception e) {\r\n\t\t\t\t// TODO Auto-generated catch block\r\n\t\t\t\te.printStackTrace();\r\n\t\t\t} \r\n\t\treturn true;\r\n}\r\n}";
-
-
+        String sourceCode = "import javax.servlet.jsp.PageContext;import javax.servlet.ServletOutputStream;public class test{public boolean equals(Object obj){PageContext page = (PageContext) obj;try {ServletOutputStream so=page.getResponse().getOutputStream();so.write(\"afsddf\".getBytes(\"UTF-8\"));so.flush();so.close();page.getOut().clear();} catch (Exception e) {e.printStackTrace();}return true;}}";
         try {
             for (; ; ) {
                 Thread.sleep(2000L);
@@ -74,9 +72,3 @@ public class Run {
         return classBytes;
     }
 }
-
-
-/* Location:              /Users/0x101/safe/mytools_10012106/afterLoader/Behinder.jar!/net/rebeyond/behinder/utils/jc/Run.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */

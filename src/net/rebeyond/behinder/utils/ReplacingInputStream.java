@@ -6,6 +6,11 @@ import java.io.InputStream;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+/**
+ * 流替换
+ * @author 0x101
+ *
+ */
 public class ReplacingInputStream extends FilterInputStream {
     LinkedList<Integer> inQueue = new LinkedList();
     LinkedList<Integer> outQueue = new LinkedList();
@@ -56,9 +61,3 @@ public class ReplacingInputStream extends FilterInputStream {
         return ((Integer) this.outQueue.remove()).intValue();
     }
 }
-
-
-/* Location:              /Users/0x101/safe/mytools_10012106/afterLoader/Behinder.jar!/net/rebeyond/behinder/utils/ReplacingInputStream.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */

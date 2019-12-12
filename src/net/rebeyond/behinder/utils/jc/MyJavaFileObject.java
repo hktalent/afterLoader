@@ -4,8 +4,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URI;
+
 import javax.tools.SimpleJavaFileObject;
-import javax.tools.JavaFileObject.Kind;
 
 public class MyJavaFileObject extends SimpleJavaFileObject {
     private String source;

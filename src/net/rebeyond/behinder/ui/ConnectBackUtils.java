@@ -34,7 +34,7 @@ public class ConnectBackUtils {
                             }
                         }
                     });
-                } catch (Exception e) {
+                } catch (final Exception e) {
                     e.printStackTrace();
                     if (e.getMessage() != null) {
                         Display.getDefault().syncExec(new Runnable() {
@@ -50,9 +50,3 @@ public class ConnectBackUtils {
         }.start();
     }
 }
-
-
-/* Location:              /Users/0x101/safe/mytools_10012106/afterLoader/Behinder.jar!/net/rebeyond/behinder/ui/ConnectBackUtils.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */

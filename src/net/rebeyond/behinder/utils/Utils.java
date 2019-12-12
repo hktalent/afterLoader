@@ -1,7 +1,6 @@
 
 package net.rebeyond.behinder.utils;
 
-import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.ClipboardOwner;
@@ -39,6 +38,7 @@ import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.KeyManager;
@@ -52,15 +52,18 @@ import javax.tools.FileObject;
 import javax.tools.ForwardingJavaFileManager;
 import javax.tools.JavaFileManager;
 import javax.tools.JavaFileObject;
-import javax.tools.SimpleJavaFileObject;
-import javax.tools.JavaFileManager.Location;
 import javax.tools.JavaFileObject.Kind;
+import javax.tools.SimpleJavaFileObject;
+
+import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.MessageBox;
+
+import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
+
 import net.rebeyond.behinder.core.Crypt;
 import net.rebeyond.behinder.core.Params;
 import net.rebeyond.behinder.ui.Main;
 import net.rebeyond.behinder.utils.jc.Run;
-import org.eclipse.swt.widgets.Control;
-import org.eclipse.swt.widgets.MessageBox;
 
 public class Utils {
     private static Map<String, JavaFileObject> fileObjects = new ConcurrentHashMap();
@@ -89,6 +92,8 @@ public class Utils {
         InputStreamReader isr = null;
         BufferedReader br = null;
         URL url;
+        // 当密码包含特殊符号时，也支持
+        password=java.net.URLEncoder.encode(password, "utf-8");
         if (getUrl.indexOf("?") > 0) {
             url = new URL(getUrl + "&" + password + "=" + (new Random()).nextInt(1000));
         } else {

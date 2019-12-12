@@ -289,7 +289,7 @@ public class DBManagerUtils {
                 sql = "select table_name,num_rows from user_tables";
             }
 
-            String finalSql = sql;
+            final String finalSql = sql;
             (new Thread() {
                 public void run() {
                     try {

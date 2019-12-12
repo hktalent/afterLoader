@@ -150,17 +150,6 @@ public class ConnectBack extends ClassLoader implements Runnable {
         }
     }
 
-    public static void main(String[] args) {
-        try {
-            ConnectBack c = new ConnectBack();
-            ip = "192.168.50.53";
-            port = "4444";
-            c.meterConnect();
-        } catch (Exception var2) {
-            var2.printStackTrace();
-        }
-
-    }
 
     private void meterConnect() throws Exception {
         Properties props = new Properties();

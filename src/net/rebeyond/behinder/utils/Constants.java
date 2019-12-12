@@ -37,9 +37,3 @@ public class Constants {
     public static int PROXY_ENABLE = 0;
     public static int PROXY_DISABLE = 1;
 }
-
-
-/* Location:              /Users/0x101/safe/mytools_10012106/afterLoader/Behinder.jar!/net/rebeyond/behinder/utils/Constants.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */

@@ -462,7 +462,7 @@ public class FileManagerUtils {
                                 resultObjx = FileManagerUtils.this.currentShellService.appendFile(fileFullPath + fileName, (byte[])blocks.get(i));
                                 statusx = resultObjx.getString("status");
                                 msgx = resultObjx.getString("msg");
-                                int finalI = i;
+                                final int finalI = i;
                                 Display.getDefault().syncExec(new Runnable() {
                                     public void run() {
                                         if (!FileManagerUtils.this.statusLabel.isDisposed()) {

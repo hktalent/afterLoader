@@ -216,7 +216,7 @@ public class CmdUtils {
 
                                     result = result.startsWith("\n") ? result : "\n" + result;
                                     result = result.startsWith("\n") ? result.substring(1) : result;
-                                    String finalResult = result;
+                                    final String finalResult = result;
                                     Display.getDefault().syncExec(new Runnable() {
                                         public void run() {
                                             if (!CmdUtils.this.statusLabel.isDisposed()) {

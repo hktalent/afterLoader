@@ -1,6 +1,5 @@
 package net.rebeyond.behinder.utils.jc;
 
-import javax.tools.JavaFileObject;
 import java.io.File;
 import java.io.IOException;
 import java.net.JarURLConnection;
@@ -11,6 +10,8 @@ import java.util.Collection;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.jar.JarEntry;
+
+import javax.tools.JavaFileObject;
 
 
 public class PackageInternalsFinder {
@@ -122,9 +123,3 @@ public class PackageInternalsFinder {
         return result;
     }
 }
-
-
-/* Location:              /Users/0x101/safe/mytools_10012106/afterLoader/Behinder.jar!/net/rebeyond/behinder/utils/jc/PackageInternalsFinder.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */
