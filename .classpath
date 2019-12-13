@@ -13,5 +13,7 @@
 	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/servlet-api-2.4.jar"/>
 	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/sqlite-jdbc-3.21.0.jar"/>
 	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/swing2swt.jar"/>
+	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/bcpkix-jdk15on-164.jar"/>
+	<classpathentry kind="lib" path="/Users/0x101/safe/mytools_10012106/myhktools/jars/ysoserial-0.0.6-SNAPSHOT-all.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
