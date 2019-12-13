@@ -4,7 +4,13 @@ afterLoader is Fast ice scorpion(跑得快的冰蝎)
 # how run ?
 ## args
 -XstartOnFirstThread
+
+```
 net.rebeyond.behinder.ui.Main
+
+java -jar afterLoader.jar -cp net.rebeyond.behinder.utils.WebLogicPasswordDecryptor 'BNsVpgsCIH1SQeAoTRpAuAgmrQk18B6MhpXuF+D0Qx8Dxg9TpAMvGKhfQDBnygPIlPxAx0ZqqoQtZUNVdfvYyw==;' '{AES}XU+PAoMN3rp6Z6oGeAmB5XGuWNNNYM59DMipi5GbAPY=;{AES}J+1dgnx8m86JlmqVNfsLZoNq9DChLqTI4g2QaoHlwls='
+
+```
 
 # Demo
 <img width="601" alt="image" src="https://user-images.githubusercontent.com/18223385/70731248-5be47500-1d41-11ea-9278-d9f172d7dc28.png">
