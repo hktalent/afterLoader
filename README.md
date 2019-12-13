@@ -1,9 +1,10 @@
-# afterLoader
-afterLoader
+# what is afterLoader ?
+afterLoader is Fast ice scorpion(跑得快的冰蝎)
 
 # how run ?
 ## args
 -XstartOnFirstThread
+net.rebeyond.behinder.ui.Main
 
 # Demo
 <img width="601" alt="image" src="https://user-images.githubusercontent.com/18223385/70731248-5be47500-1d41-11ea-9278-d9f172d7dc28.png">
