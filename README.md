@@ -15,3 +15,5 @@ afterLoader
 - 2019-12-12 优化了linux系统执行命令未考核支持管道的问题
 - 2019-12-13 更新所有jar，确保其中不得暗藏后门；更新jar后图形类个别未向下兼容，手工添加AWTLayout BorderLayout
 - 2019-12-13 修改默认密码pass为专用、高难度密码
+- 2019-12-13 增加 net.rebeyond.behinder.utils.WebLogicPasswordDecryptor
+- 2019-12-13 增加 bcpkix-jdk15on-164.jar
