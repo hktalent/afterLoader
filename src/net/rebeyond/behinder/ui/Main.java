@@ -148,7 +148,7 @@ public class Main {
             }
         });
         this.shlGemini.setSize(936, 565);
-        this.shlGemini.setText(String.format(Main.afterLoader + " %s 51Pwn客户端", new Object[]{Constants.VERSION}));
+        this.shlGemini.setText(String.format(Main.afterLoader + " %s 安全研究Pro客户端", new Object[]{Constants.VERSION}));
         this.shlGemini.setLayout(new GridLayout(1, false));
 
         ToolBar toolBar = new ToolBar(this.shlGemini, 8519680);
