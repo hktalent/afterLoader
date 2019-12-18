@@ -2,18 +2,18 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/Java SE 8 [1.8.0_181]"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/asm-3.3.1.jar"/>
-	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/javax.servlet-api-3.1.0.jar"/>
-	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/json-20180130.jar"/>
-	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/jsp-api-2.0.jar"/>
-	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/org.eclipse.core.commands_3.9.0.v20170530-1048.jar"/>
-	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/org.eclipse.core.runtime_3.13.0.v20170207-1030.jar"/>
-	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/org.eclipse.swt.cocoa.macosx.x86_64_3.110.0.v20190305-0602.jar"/>
-	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/org.eclipse.text_3.6.100.v20170203-0814.jar"/>
-	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/servlet-api-2.4.jar"/>
-	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/sqlite-jdbc-3.21.0.jar"/>
-	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/swing2swt.jar"/>
-	<classpathentry kind="lib" path="src/net/rebeyond/behinder/resource/lib/bcpkix-jdk15on-164.jar"/>
 	<classpathentry kind="lib" path="/Users/0x101/safe/mytools_10012106/myhktools/jars/ysoserial-0.0.6-SNAPSHOT-all.jar"/>
+	<classpathentry kind="lib" path="src/asm-3.3.1.jar"/>
+	<classpathentry kind="lib" path="src/bcpkix-jdk15on-164.jar"/>
+	<classpathentry kind="lib" path="src/javax.servlet-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="src/json-20180130.jar"/>
+	<classpathentry kind="lib" path="src/jsp-api-2.0.jar"/>
+	<classpathentry kind="lib" path="src/org.eclipse.core.commands_3.9.0.v20170530-1048.jar"/>
+	<classpathentry kind="lib" path="src/org.eclipse.core.runtime_3.13.0.v20170207-1030.jar"/>
+	<classpathentry kind="lib" path="src/org.eclipse.swt.cocoa.macosx.x86_64_3.110.0.v20190305-0602.jar"/>
+	<classpathentry kind="lib" path="src/org.eclipse.text_3.6.100.v20170203-0814.jar"/>
+	<classpathentry kind="lib" path="src/servlet-api-2.4.jar"/>
+	<classpathentry kind="lib" path="src/sqlite-jdbc-3.21.0.jar"/>
+	<classpathentry kind="lib" path="src/swing2swt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

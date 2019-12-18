@@ -13,6 +13,11 @@ import java.util.List;
 import java.util.jar.Attributes;
 import java.util.jar.Manifest;
 
+/**
+ * Main-Class: org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader
+ * @author 0x101
+ *
+ */
 public class JarRsrcLoader {
 	public JarRsrcLoader() {
 	}
