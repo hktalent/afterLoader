@@ -24,3 +24,4 @@ java -jar afterLoader.jar -cp net.rebeyond.behinder.utils.WebLogicPasswordDecryp
 - 2019-12-13 修改默认密码pass为专用、高难度密码
 - 2019-12-13 增加 net.rebeyond.behinder.utils.WebLogicPasswordDecryptor
 - 2019-12-13 增加 bcpkix-jdk15on-164.jar
+- 2019-12-18 所有风险的net/rebeyond/behinder/resource/lib/*jar，都重新从https://mvnrepository.com/artifact/org.eclipse.swt下载4.3版本了
