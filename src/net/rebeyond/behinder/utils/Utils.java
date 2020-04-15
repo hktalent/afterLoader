@@ -400,7 +400,8 @@ public class Utils {
             }
 
             byte[] resData = bos.toByteArray();
-            System.out.println("res before decrypt:" + new String(resData));
+            // 加密数据
+//            System.out.println("res before decrypt:" + new String(resData));
             result.put("data", resData);
             Map<String, String> responseHeader = new HashMap();
             Iterator var11 = conn.getHeaderFields().keySet().iterator();
@@ -478,6 +479,7 @@ public class Utils {
 
         BufferedReader reader;
         String line;
+//        System.out.println(conn.getResponseCode());
         if (conn.getResponseCode() == 200) {
             for(reader = new BufferedReader(new InputStreamReader(conn.getInputStream(), "UTF-8")); (line = reader.readLine()) != null; sb = sb.append(line + "\n")) {
             }
